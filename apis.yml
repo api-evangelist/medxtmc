@@ -1,7 +1,34 @@
 aid: medxtmc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/medxtmc.png
 name: medxtmc
-description: medxtmc is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+description: >-
+  MEDx Translational Medicine Co., Ltd (MEDx TMC) is a Suzhou, China based precision
+  medicine company founded in 2013, formerly QIAGEN (Suzhou) Translational Medicine.
+  It is a leading provider of companion diagnostics (CDx) and total precision-medicine
+  solutions, offering pharma services (biomarker discovery, target validation, patient
+  stratification, IVD/CDx R&D and commercialization), clinical testing panels for solid
+  tumors, blood cancers and infectious diseases, and diagnostic products built on IHC,
+  PCR and NGS platforms. MEDx has collaborated with 400+ pharmaceutical and technology
+  partners and holds ISO 13485, ISO 17025, CAP and CNAS accreditations. It is a
+  portfolio company of Qiming Venture Partners. MEDx TMC publishes no public developer
+  API, developer portal, or SDKs; this profile captures company identity for the API
+  Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/medxtmc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +38,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Precision Medicine
+- Companion Diagnostics
+- Molecular Diagnostics
+- Biomarkers
+- Clinical Testing
+- Healthcare
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +55,9 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/medxtmc-domain-security.yml
 - type: Website
-  url: https://medxtmc.com
+  url: https://www.medxtmc.net
+- type: About
+  url: https://www.medxtmc.net/Overview.shtml
